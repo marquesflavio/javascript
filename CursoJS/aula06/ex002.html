@@ -16,10 +16,10 @@
     <p>Já me livrei da maldição!</p>
     <!--A tag do script vai antes do /body.-->
     <script>
-        alert('Meu primeiro código') /*código para gerar uma caixa de alerta de texto*/
-        confirm('Está gostando de JS?')/*código para gerar uma pergunta com resposta (OK, Cancel)*/
-        prompt('Qual seu nome?')/*gera uma caixa de pergunta para o usuário responder*/
-
+        var nome = prompt('Qual seu nome?')
+        alert('É um prazer em te conhecer, ' + nome) /*a variável não pode ficar dentro de aspas, para ela ser atribuída tem que ser feita a concatenação, + var*/
+        var idade = prompt('Qual sua idade?')
+        alert('Que legal, você já tem ' + idade + " anos de idade!")
     </script>
 </body>
 </html>

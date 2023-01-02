@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em JavaScript</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversão de string > número</h1>
+    <p>Para a conversão de um valor de prompt (string) para um número, é necessário converter para number, com os comandos <code>Number.parseInter(n)</code> para número inteiros, ou <code>Number.parseFloat(n)</code> para números reais, ou ainda apenas <code>Number(n)</code> que o JavaScript converte se R ou I.</p>
+    <!--A tag do script vai antes do /body.-->
+    <script>
+        var n1 = Number.parseFloat(prompt('Digite um número'))//var que recebe valor de prompt, está recendo uma string.
+        var n2 = Number.parseFloat(prompt('Digite outro número'))//var que recebe valor de prompt, está recendo uma string.
+        var n3 = Number(prompt('Digite um terceiro número'))
+        var s = n1 + n2 + n3
+        alert(`A soma de ${n1}, ${n2} e ${n3} dá o valor total de ${s}`) //o alert está com template string (dentro de crases), utilizando o placeholder ${}
+       // (string + string) = concatenação
+       // (number + number) = adição, por isso a conversão foi efetuada
+        
+    </script>
+</body>
+</html>
