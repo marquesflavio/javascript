@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title> 
+    <style>
+        div#area{
+            font: normal 20px arial;
+            background: rgb(63, 194, 63);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body> <!--Eventos são as coisas que podem acontecer com essa DIV-->
+    <div id="area"><!-- É possível chamar as funções por dentro do HTML acrescentando essas funções na tag > onmouseenter="entrou()" onmouseout="saiu()" onclick="inicio()" OU direto no script, com o addEventListener-->
+        Interaja...
+    </div>
+
+    <script>
+        function entrou(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Entrou!'
+            a.style.background = "red"
+            
+        }
+        function saiu(){
+            var a = window.document.getElementById('area')
+            a.innerText = 'Saiu!'
+            a.style.background = "green"
+        }
+        function inicio(){
+            var a = window.document.getElementById('area')
+            a.innerText = "Interaja..."
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
