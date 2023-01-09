@@ -7,7 +7,7 @@ function verificar(){
 
     if (fano.value == 0 || fano.value > ano){
         window.alert('[ERRO] Verifique os dados e tente novamente!')
-    } else{
+    } else {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var gênero = ''
@@ -29,7 +29,7 @@ function verificar(){
             if (idade >= 0 && idade < 10){
                 img.setAttribute('src', 'bebe-f.png')
             } else if (idade < 21){
-               img.setAttribute('src', 'jovem-f.png')
+                img.setAttribute('src', 'jovem-f.png')
             } else if (idade < 50){
                 img.setAttribute('src', 'adulto-f.png')
             } else{
