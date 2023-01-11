@@ -9,17 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
 
     </header>
     <section>
         <div>
-            Testando...
-        </div>
-        <div>
-            Testando 2
+           <p>Qual tabuada você quer aprender?: <input type="number" id="txtnum">
+            <label for="txtnum"></label>
+            <input type="button" value="Calcular" onclick="contar()">
+           </p>
+    
 
         </div>
+        <div> <!--Poderia ter criado um #res na tag DIV também, select é outra forma de mostrar-->
+            <select name="res" id="res" size="10">
+                <option>Digite um número acima</option>
+            </select>
+        </div>      
 
     </section>
     <footer>
