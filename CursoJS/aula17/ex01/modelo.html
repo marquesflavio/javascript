@@ -14,19 +14,14 @@
     </header>
     <section>
         <div>
-            <p>
-                Número (entre 1 e 100): <input type="number" name="txtnum" id="txtnum"><label for="txtnum"></label> <input type="button" value="Adicionar" onclick="adicionar()">
-            </p>
+            Número (entre 1 e 100): 
+            <input type="number" name="txtnum" id="txtnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="txtlista" id="txtlista" size="6"></select>
+            <br><input type="button" value="Finalizar" onclick="finalizar()">
         </div>
-        <div>
-            <p><select name="txtfim" id="txtlista" size="6">
-                <option id="res">Digite um valor acima </option>
-            </select>
-            </p>
-            
-            <input type="button" value="Finalizar" onclick="finalizar()">
-
-            <p id="resp"></p>
+        <div id="res">
+        
         </div>
 
     </section>
