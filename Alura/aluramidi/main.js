@@ -14,7 +14,7 @@ const listaDeTeclas = document.querySelectorAll('.tecla')
 for(var c = 0; c < listaDeTeclas.length; c++) {
 
     const tecla = listaDeTeclas[c]
-    const instrumento = tecla.classList[1]
+    const instrumento = tecla.classList[1] //tecla.classList é o caminho DOM
     const idAudio = `#som_${instrumento}`
 
     tecla.onclick = function () {
