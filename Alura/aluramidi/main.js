@@ -1,6 +1,6 @@
 /*atribuímos parâmetros a function: Os parâmetros servem para auxiliar em alguma lógica no código dentro de uma função. Por exemplo, uma função calculaMedia(), pode ter como parâmetros notaA e notaB, que serão os valores utilizados para serem caclulados e retornar o valor da média.*/
 function tocaSom(idElementoAudio){ 
-    document.querySelector(idElementoAudio).play() //comando para tocar 
+    document.querySelector(idElementoAudio).play() //comando para tocar
 }
 
 //document.querySelector('.tecla_pom').onclick = tocaSomPom 

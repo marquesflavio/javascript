@@ -1,1 +1,7 @@
-var tel = document.querySelector('.tel')
+
+
+const listaDeBotoes = document.querySelectorAll('.botao')
+
+console.log(listaDeBotoes[3])
+
+
