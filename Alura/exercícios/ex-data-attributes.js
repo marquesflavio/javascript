@@ -1,16 +1,14 @@
 var botao = document.querySelectorAll(".botao")
 var lista = document.querySelectorAll(".lista")
 
-botao.addEventListener("click", () => {
-    
-    if (lista.style.display === "none"){
-        lista.style.display = "block"
-    } else{
-        lista.style.display = "none"
-    }
+botao[0].addEventListener('click', () => {
+    lista.style.display = "none"
 })
-
-
+botao[1].addEventListener('click', () => {
+    lista.style.display = "block"
+})
+    
+    
 
 
 
