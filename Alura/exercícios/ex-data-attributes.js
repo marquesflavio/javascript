@@ -1,5 +1,5 @@
 var botao = document.querySelectorAll(".botao")
-var lista = document.querySelectorAll(".lista")
+var lista = document.querySelector(".lista")
 
 botao[0].addEventListener('click', () => {
     lista.style.display = "none"
