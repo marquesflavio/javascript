@@ -55,7 +55,7 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: var(--main-preto)
+    color: rgba(255,255,255,0.8)
 }
 
 .box {
