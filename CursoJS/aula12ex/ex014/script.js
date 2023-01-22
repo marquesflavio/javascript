@@ -7,7 +7,7 @@ function carregar(){
     
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 0 && hora < 12) {
-        img.src = 'fotomanha.png' //var img tem ocaminho declarado  em document.getElementById...
+        img.src = 'fotomanha.png' //var img tem o caminho declarado  em document.getElementById...
         document.body.style.background = '#c7b182'
         msg2.innerHTML = 'Bom dia!'
     } else if (hora >= 12 && hora <= 18){ 
