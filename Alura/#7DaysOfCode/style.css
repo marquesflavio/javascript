@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(104, 106, 192, 0.753);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.caixa-texto{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(195, 197, 196);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+footer{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 10px;
+}
