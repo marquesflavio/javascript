@@ -29,7 +29,7 @@ function listar(){
         } else {
             let removeItem = prompt('Qual item você deseja excluir?')
             let removeArray = prompt('De qual categoria você quer remover o item? Frutas, Mercearia, Laticinios ou Bebidas?')
-            if (removeItem == ''){
+            if (removeItem == '' || removeItem !== -1){
                 alert(`${removeItem} não está na lista ou não foi digitado!`)
             } else {
                 switch (removeArray){
