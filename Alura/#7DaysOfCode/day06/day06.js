@@ -28,10 +28,13 @@ function listar(){
 
         } else {
             let removeItem = prompt('Qual item você deseja excluir?')
-            let removeArray = prompt('De qual categoria você quer remover o item? Frutas, Mercearia, Laticinios ou Bebidas?')
-            if (removeItem == '' || removeItem !== -1){
-                alert(`${removeItem} não está na lista ou não foi digitado!`)
+            if (removeItem == '' || arrayFrutas.indexOf(removeItem) || arrayBebidas.indexOf(removeItem) || arrayLaticinios.indexOf(removeItem) || arrayMercearia.indexOf(removeItem)){
+                alert(`${removeItem} não está na lista ou item está em branco!`)
+                var lista = document.querySelector('.lista-mercado')
+                lista.innerHTML = (`Frutas: ${arrayFrutas}<br> Mercearia: ${arrayMercearia}<br> Bebidas: ${arrayBebidas}<br> Laticínios: ${arrayLaticinios}`)
+                brake
             } else {
+                let removeArray = prompt('De qual categoria você quer remover o item? Frutas, Mercearia, Laticinios ou Bebidas?')
                 switch (removeArray){
                     case ('Frutas'):
                         arrayFrutas.splice(arrayFrutas.indexOf(removeItem),1)
